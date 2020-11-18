@@ -1,0 +1,197 @@
+
+
+p { text-align: center; }
+ .toggle, [id^=drop] {
+ display: none;
+}
+
+nav {
+  width:80%; 
+  padding: 0;
+  background-color: #fff;
+}
+
+
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+ 
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  background-color: #7e0c57;  
+  opacity:.80;
+}
+
+nav a {
+  display: block;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav ul li ul li:hover { background: #57134a; }
+
+nav a:hover { background-color: #57134a; }
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul { display: inherit; }
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+li > a:after { content: ' +'; }
+
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+#logo {
+  display: block;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  float: none;
+  background-color:#7e0c57;
+}
+
+nav { 
+  width:90%; 
+  margin: 0;
+}
+
+.toggle + a,
+ .menu { display: none; }
+
+.toggle {
+  display: block;
+  background-color:#7e0c57;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  border: none;
+}
+
+.toggle:hover { background-color: #57134a; }
+
+[id^=drop]:checked + ul { display: block; }
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 20px; }
+
+nav ul ul ul a { padding: 0 40px; }
+
+nav a:hover,
+ nav ul ul ul a { background-color: #57134a; }
+
+nav ul li ul li .toggle,
+ nav ul ul a { background-color: #7e0c57; }
+
+nav ul ul {
+  float: none;
+  position: static;
+  color: #ffffff;
+}
+
+nav ul ul li:hover > ul,
+nav ul li:hover > ul { display: none; }
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul ul li { position: static;
+
+}
+}
+@media all and (max-width : 968px) {
+  nav { 
+  width:100%; 
+  margin: 0;
+}
+
+  }
+  @media all and (max-width : 1200px) {
+  nav { 
+  width:100%; 
+  margin: 0;
+}
+
+  }
+@media all and (max-width : 1400px) {
+  nav { 
+  width:100%; 
+  margin: 0;
+}
+
+  }
+  @media all and (max-width : 1600px) {
+  nav { 
+  width:100%; 
+  margin: 0;
+}
+
+  }
+   @media all and (max-width : 1800px) {
+  nav { 
+  width:100%; 
+  margin: 0;
+}
+
+  }
+
+
+@media all and (max-width : 330px) {
+
+nav ul li {
+  display: block;
+  width: 70%;
+  margin:0px;
+}
+nav { 
+  width:100%; 
+  margin: 0;
+}
+
+}
